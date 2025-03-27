@@ -22,3 +22,13 @@ $manga= $resultat->fetchAll();
         }
     ?>
 </ul>
+<br>
+<form action="addAuthor.php" method="post">
+    <h1>Ajout d'un auteur : </h1>
+    <br>
+    Nom : <input type="text" name="nom" />
+    <br>
+    Date de naissance : <input type="int" name="date_naissance" />
+    <br>
+    <input type="submit" value="Valider" />
+</form>
