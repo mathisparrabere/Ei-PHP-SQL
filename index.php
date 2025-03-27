@@ -10,9 +10,12 @@ $manga= $resultat->fetchAll();
 <ul>
     <?php
         foreach($manga as $manga) {
+            $titre = $manga['titre'];
             ?>
             <li>
-                <a href=""><?php echo $manga['titre'] ?></a>
+                <?php
+                echo '<a href="manga.php?id='.$manga['id'].'">'.$titre.'</a>';
+                ?>
                 <p><?php echo '('.$manga['annee_publi'].')' ?></p>
             </li>
             <?php
